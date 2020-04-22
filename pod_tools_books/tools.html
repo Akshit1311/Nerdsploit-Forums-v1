@@ -16,10 +16,17 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
 
+    <!-- AOS -->
 
     <link rel="stylesheet" href="css/aos.css">
 
+
+    <!-- jQuery -->
+    <script src="jquery-3.4.1.min.js"></script>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tools-styles.css">
     
   </head>
   <body>
@@ -52,33 +59,12 @@
 
                 <div class="d-inline-block ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
 
-                <ul class="site-menu js-clone-nav d-none">
-                  <li class="has-children active">
-                    <a href="index.html">Home</a>
-                    <ul class="dropdown arrow-top">
-                      <li><a href="#">Menu One</a></li>
-                      <li><a href="#">Menu Two</a></li>
-                      <li><a href="#">Menu Three</a></li>
-                      <li class="has-children">
-                        <a href="#">Sub Menu</a>
-                        <ul class="dropdown">
-                          <li><a href="#">Menu One</a></li>
-                          <li><a href="#">Menu Two</a></li>
-                          <li><a href="#">Menu Three</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="has-children">
-                    <a href="#">Dropdown</a>
-                    <ul class="dropdown arrow-top">
-                      <li><a href="#">Menu One</a></li>
-                      <li><a href="#">Menu Two</a></li>
-                      <li><a href="#">Menu Three</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                <ul class="site-menu js-clone-nav">
+                  
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="./podcast.html">Podcast</a></li>
+                  <li><a href="./tools.html">Tools</a></li>
+                  <li><a href="./books.html">Books</a></li>
                 </ul>
             </nav>
 
@@ -90,7 +76,8 @@
       
     </header>
 
-    <div class="site-blocks-cover overlay" style="background-image: url(images/tools_bg.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover overlay" data-aos="fade" data-stellar-background-ratio="0.5">
+      <img id="kali-logo" src="./images/kali-logo.png" alt="">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
 
@@ -112,7 +99,7 @@
 
 
     <div class="site-section bg-light">
-      <div class="container">
+      <div class="container page-1 current-page">
 
         <div class="row mb-5" data-aos="fade-up">
           <div class="col-md-12 text-center">
@@ -126,7 +113,12 @@
 
             <h3 class="font-weight-light"><a href="single-post.html">John the Ripper</a></h3>
             <div class="text-white mb-3"><span class="text-black-opacity-05"><small>Software <span class="sep">/</span> 16 September 2017 <span class="sep">/</span> 1:30:20</small></span></div>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat mollitia consequatur, optio nesciunt placeat. Iste voluptates excepturi tenetur, nesciunt.</p>
+            <p class="mb-4">John the Ripper is a fast password cracker, currently available for many flavors of Unix, macOS, Windows, DOS, BeOS, and OpenVMS. Historically, its primary purpose is to detect weak Unix passwords. These days, besides many Unix crypt(3) password hash types, supported in "-jumbo" versions are hundreds of additional hashes and ciphers.
+              <br><br>
+
+              For more information visit:- <a href="https://www.openwall.com/john/">https://www.openwall.com/john/</a>
+            
+            </p>
 
             <!-- <div class="player">
               <audio id="player2" preload="none" controls style="max-width: 100%">
@@ -139,12 +131,16 @@
 
 
          <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up">
-          <div class="image" style="background-image: url('images/tool2.png');"></div>
+          <div class="image" style="background-image: url('images/tool2.png');background-size: 250px;"></div>
           <div class="text">
 
             <h3 class="font-weight-light"><a href="single-post.html">Metasploit Project</a></h3>
             <div class="text-white mb-3"><span class="text-black-opacity-05"><small>Software <span class="sep">/</span> 16 September 2017 <span class="sep">/</span> 1:30:20</small></span></div>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat mollitia consequatur, optio nesciunt placeat. Iste voluptates excepturi tenetur, nesciunt.</p>
+            <p class="mb-4">Metasploit is a penetration testing platform that enables you to find, exploit, and validate vulnerabilities. It provides the infrastructure, content, and tools to perform penetration tests and extensive security auditing and thanks to the open source community and Rapid7’s own hard working content team, new modules are added on a regular basis, which means that the latest exploit is available to you as soon as it’s published.
+              <br><br>
+              For more information visit:- <a href="https://www.metasploit.com/">https://www.metasploit.com/</a>   
+
+            </p>
 
 
             <!-- <div class="player">
@@ -158,12 +154,17 @@
 
 
          <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up">
-            <div class="image" style="background-image: url('images/img_3.jpg');"></div>
+            <div class="image" style="background-image: url('images/tool3.jpg');background-size: 250px;"></div>
             <div class="text">
 
-              <h3 class="font-weight-light"><a href="single-post.html">Episode 06: How To Create Web Page Using Bootstrap 4</a></h3>
+              <h3 class="font-weight-light"><a href="single-post.html">Snort</a></h3>
               <div class="text-white mb-3"><span class="text-black-opacity-05"><small>By Mike Smith <span class="sep">/</span> 16 September 2017 <span class="sep">/</span> 1:30:20</small></span></div>
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat mollitia consequatur, optio nesciunt placeat. Iste voluptates excepturi tenetur, nesciunt.</p>
+              <p class="mb-4">Snort is an open source network intrusion prevention system, capable of performing real-time traffic analysis and packet logging on IP networks. It can perform protocol analysis, content searching/matching, and can be used to detect a variety of attacks and probes, such as buffer overflows, stealth port scans, CGI attacks, SMB probes, OS fingerprinting attempts, and much more.
+                <br><br>
+              
+                For more information visit:- <a href="https://www.snort.org/">https://www.snort.org/</a>
+
+              </p>
 
               <!-- <div class="player">
                 <audio id="player2" preload="none" controls style="max-width: 100%">
@@ -175,12 +176,16 @@
 
 
           <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up">
-            <div class="image" style="background-image: url('images/img_4.jpg');"></div>
+            <div class="image" style="background-image: url('images/tool4.jpg');background-size: 250px;"></div>
             <div class="text">
 
-              <h3 class="font-weight-light"><a href="single-post.html">Episode 05: How To Create Web Page Using Bootstrap 4</a></h3>
+              <h3 class="font-weight-light"><a href="single-post.html">Wireshark</a></h3>
               <div class="text-white mb-3"><span class="text-black-opacity-05"><small>By Mike Smith <span class="sep">/</span> 16 September 2017 <span class="sep">/</span> 1:30:20</small></span></div>
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat mollitia consequatur, optio nesciunt placeat. Iste voluptates excepturi tenetur, nesciunt.</p>
+              <p class="mb-4">Wireshark is the world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level and is the de facto (and often de jure) standard across many commercial and non-profit enterprises, government agencies, and educational institutions. Wireshark development thrives thanks to the volunteer contributions of networking experts around the globe and is the continuation of a project started by Gerald Combs in 1998.
+                <br><br>
+                For more information visit:- <a href="https://www.wireshark.org/">https://www.wireshark.org/</a>
+
+              </p>
 
               <!-- <div class="player">
                 <audio id="player2" preload="none" controls style="max-width: 100%">
@@ -192,12 +197,16 @@
 
 
           <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up">
-            <div class="image" style="background-image: url('images/img_5.jpg');"></div>
+            <div class="image" style="background-image: url('images/tool5.png');background-size: 250px;"></div>
             <div class="text">
 
-              <h3 class="font-weight-light"><a href="single-post.html">Episode 04: How To Create Web Page Using Bootstrap 4</a></h3>
+              <h3 class="font-weight-light"><a href="single-post.html">Nmap</a></h3>
               <div class="text-white mb-3"><span class="text-black-opacity-05"><small>By Mike Smith <span class="sep">/</span> 16 September 2017 <span class="sep">/</span> 1:30:20</small></span></div>
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat mollitia consequatur, optio nesciunt placeat. Iste voluptates excepturi tenetur, nesciunt.</p>
+              <p class="mb-4">Nmap ("Network Mapper") is a free and open source (license) utility for network discovery and security auditing. Many systems and network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime. Nmap uses raw IP packets in novel ways to determine what hosts are available on the network, what services (application name and version) those hosts are offering, what operating systems (and OS versions) they are running, what type of packet filters/firewalls are in use, and dozens of other characteristics. It was designed to rapidly scan large networks, but works fine against single hosts. Nmap runs on all major computer operating systems, and official binary packages are available for Linux, Windows, and Mac OS X. In addition to the classic command-line Nmap executable, the Nmap suite includes an advanced GUI and results viewer (Zenmap), a flexible data transfer, redirection, and debugging tool (Ncat), a utility for comparing scan results (Ndiff), and a packet generation and response analysis tool (Nping).
+
+                <br><br>
+                For more information visit:- <a href="https://nmap.org/">https://nmap.org/</a>
+              </p>
 
               <!-- <div class="player">
                 <audio id="player2" preload="none" controls style="max-width: 100%">
@@ -209,18 +218,218 @@
 
 
       </div>
+      <div class="container page-2">
+
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-md-12 text-center">
+            <h2 class="font-weight-bold text-black">Recent Tools</h2>
+          </div>
+        </div>
+        
+        <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up">
+          <div class="image" style="background-image: url('images/tool6.png'); background-size: 250px;"></div>
+          <div class="text">
+
+            <h3 class="font-weight-light"><a href="single-post.html">Hydra</a></h3>
+            <div class="text-white mb-3"><span class="text-black-opacity-05"><small>Software <span class="sep">/</span> 16 September 2017 <span class="sep">/</span> 1:30:20</small></span></div>
+            <p class="mb-4">
+              Hydra is a parallelized login cracker which supports numerous protocols to attack. It is very fast and flexible, and new modules are easy to add. This tool makes it possible for researchers and security consultants to show how easy it would be to gain unauthorized access to a system remotely. <br>
+              It supports: Cisco AAA, Cisco auth, Cisco enable, CVS, FTP, HTTP(S)-FORM-GET, HTTP(S)-FORM-POST, HTTP(S)-GET, HTTP(S)-HEAD, HTTP-Proxy, ICQ, IMAP, IRC, LDAP, MS-SQL, MySQL, NNTP, Oracle Listener, Oracle SID, PC-Anywhere, PC-NFS, POP3, PostgreSQL, RDP, Rexec, Rlogin, Rsh, SIP, SMB(NT), SMTP, SMTP Enum, SNMP v1+v2+v3, SOCKS5, SSH (v1 and v2), SSHKEY, Subversion, Teamspeak (TS2), Telnet, VMware-Auth, VNC and XMPP.
+
+
+              <br><br>
+
+              For more information visit:- <a href="https://tools.kali.org/password-attacks/hydra">https://tools.kali.org/password-attacks/hydra</a>
+            
+            </p>
+
+            <!-- <div class="player">
+              <audio id="player2" preload="none" controls style="max-width: 100%">
+                <source src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3" type="audio/mp3">
+              </audio>
+            </div> -->
+
+          </div>
+        </div>
+
+
+         <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up">
+          <div class="image" style="background-image: url('images/tool7.jpg');background-size: 250px;"></div>
+          <div class="text">
+
+            <h3 class="font-weight-light"><a href="single-post.html">Aircrack-ng</a></h3>
+            <div class="text-white mb-3"><span class="text-black-opacity-05"><small>Software <span class="sep">/</span> 16 September 2017 <span class="sep">/</span> 1:30:20</small></span></div>
+            <p class="mb-4">Aircrack-ng is an 802.11 WEP and WPA-PSK keys cracking program that can recover keys once enough data packets have been captured. It implements the standard FMS attack along with some optimizations like KoreK attacks, as well as the all-new PTW attack, thus making the attack much faster compared to other WEP cracking tools.
+              <br><br>
+              For more information visit:- <a href="https://tools.kali.org/wireless-attacks/aircrack-ng">https://tools.kali.org/wireless-attacks/aircrack-ng</a>   
+
+            </p>
+
+
+            <!-- <div class="player">
+              <audio id="player2" preload="none" controls style="max-width: 100%">
+                <source src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3" type="audio/mp3">
+              </audio> -->
+            <!-- </div> -->
+
+          </div>
+        </div>
+
+
+         <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up">
+            <div class="image" style="background-image: url('images/tool8.jpg');background-size: 250px;"></div>
+            <div class="text">
+
+              <h3 class="font-weight-light"><a href="single-post.html">Dirbuster</a></h3>
+              <div class="text-white mb-3"><span class="text-black-opacity-05"><small>By Mike Smith <span class="sep">/</span> 16 September 2017 <span class="sep">/</span> 1:30:20</small></span></div>
+              <p class="mb-4">
+                DirBuster is a multi threaded java application designed to brute force directories and files names on web/application servers. Often is the case now of what looks like a web server in a state of default installation is actually not, and has pages and applications hidden within. DirBuster attempts to find these. However tools of this nature are often as only good as the directory and file list they come with. A different approach was taken to generating this. The list was generated from scratch, by crawling the Internet and collecting the directory and files that are actually used by developers! DirBuster comes a total of 9 different lists, this makes DirBuster extremely effective at finding those hidden files and directories. And if that was not enough DirBuster also has the option to perform a pure brute force, which leaves the hidden directories and files nowhere to hide.
+                <br><br>
+              
+                For more information visit:- <a href="https://tools.kali.org/web-applications/dirbuster">https://tools.kali.org/web-applications/dirbuster</a>
+
+              </p>
+
+              <!-- <div class="player">
+                <audio id="player2" preload="none" controls style="max-width: 100%">
+                  <source src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3" type="audio/mp3">
+                </audio>
+              </div> -->
+            </div>
+          </div>
+
+
+          <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up">
+            <div class="image" style="background-image: url('images/tool9.png');background-size: 250px;"></div>
+            <div class="text">
+
+              <h3 class="font-weight-light"><a href="single-post.html">Lynis</a></h3>
+              <div class="text-white mb-3"><span class="text-black-opacity-05"><small>By Mike Smith <span class="sep">/</span> 16 September 2017 <span class="sep">/</span> 1:30:20</small></span></div>
+              <p class="mb-4">
+                Lynis is a battle-tested security tool for systems running Linux, macOS, or Unix-based operating system. It performs an extensive health scan of your systems to support system hardening and compliance testing. The project is open source software with the GPL license and available since 2007.
+                <br><br>
+                For more information visit:- <a href=" https://cisofy.com/lynis/"> https://cisofy.com/lynis/</a>
+
+              </p>
+
+              <!-- <div class="player">
+                <audio id="player2" preload="none" controls style="max-width: 100%">
+                  <source src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3" type="audio/mp3">
+                </audio>
+              </div> -->
+            </div>
+          </div>
+
+
+          <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up">
+            <div class="image" style="background-image: url('images/tool10.png');background-size: 250px;"></div>
+            <div class="text">
+
+              <h3 class="font-weight-light"><a href="single-post.html">Sqlmap</a></h3>
+              <div class="text-white mb-3"><span class="text-black-opacity-05"><small>By Mike Smith <span class="sep">/</span> 16 September 2017 <span class="sep">/</span> 1:30:20</small></span></div>
+              <p class="mb-4">
+                Sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers. It comes with a powerful detection engine, many niche features for the ultimate penetration tester and a broad range of switches lasting from database fingerprinting, over data fetching from the database, to accessing the underlying file system and executing commands on the operating system via out-of-band connections.
+
+                <br><br>
+                For more information visit:- <a href="http://sqlmap.org/">http://sqlmap.org/</a>
+              </p>
+
+              <!-- <div class="player">
+                <audio id="player2" preload="none" controls style="max-width: 100%">
+                  <source src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3" type="audio/mp3">
+                </audio>
+              </div> -->
+            </div>
+          </div>
+
+
+      </div>
+
+      <div class="container page-3">
+
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-md-12 text-center">
+            <h2 class="font-weight-bold text-black">Recent Tools</h2>
+          </div>
+        </div>
+        
+        <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up">
+          <div class="image" style="background-image: url('images/tool11.jpg'); background-size: 250px;"></div>
+          <div class="text">
+
+            <h3 class="font-weight-light"><a href="single-post.html">Nikto</a></h3>
+            <div class="text-white mb-3"><span class="text-black-opacity-05"><small>Software <span class="sep">/</span> 16 September 2017 <span class="sep">/</span> 1:30:20</small></span></div>
+            <p class="mb-4">
+              Nikto is an Open Source (GPL) web server scanner which performs comprehensive tests against web servers for multiple items, including over 6700 potentially dangerous files/programs, checks for outdated versions of over 1250 servers, and version specific problems on over 270 servers. It also checks for server configuration items such as the presence of multiple index files, HTTP server options, and will attempt to identify installed web servers and software. Scan items and plugins are frequently updated and can be automatically updated. <br>
+
+              Nikto is not designed as a stealthy tool. It will test a web server in the quickest time possible, and is obvious in log files or to an IPS/IDS. However, there is support for LibWhisker's anti-IDS methods in case you want to give it a try (or test your IDS system). <br>
+
+              Not every check is a security problem, though most are. There are some items that are "info only" type checks that look for things that may not have a security flaw, but the webmaster or security engineer may not know are present on the server. These items are usually marked appropriately in the information printed. There are also some checks for unknown items which have been seen scanned for in log files. <br>
+
+
+
+              <br><br>
+
+              For more information visit:- <a href="https://cirt.net/Nikto2">https://cirt.net/Nikto2</a>
+            
+            </p>
+
+            <!-- <div class="player">
+              <audio id="player2" preload="none" controls style="max-width: 100%">
+                <source src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3" type="audio/mp3">
+              </audio>
+            </div> -->
+
+          </div>
+        </div>
+
+
+         <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up">
+          <div class="image" style="background-image: url('images/tool12.jpg');background-size: 250px;"></div>
+          <div class="text">
+
+            <h3 class="font-weight-light"><a href="single-post.html">Set Engineering Toolkit(SET)</a></h3>
+            <div class="text-white mb-3"><span class="text-black-opacity-05"><small>Software <span class="sep">/</span> 16 September 2017 <span class="sep">/</span> 1:30:20</small></span></div>
+            <p class="mb-4">
+              The Social-Engineer Toolkit is an open-source penetration testing framework designed for Social-Engineering. SET has a number of custom attack vectors that allow you to make a believable attack in a fraction of the time.
+              <br><br>
+              For more information visit:- <a href="https://tools.kali.org/information-gathering/set">https://tools.kali.org/information-gathering/set</a>   
+
+            </p>
+
+
+            <!-- <div class="player">
+              <audio id="player2" preload="none" controls style="max-width: 100%">
+                <source src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3" type="audio/mp3">
+              </audio> -->
+            <!-- </div> -->
+
+          </div>
+        </div>
+
+
+         
+
+
+          
+
+          
+
+
+      </div>
+
       <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="col-md-12 text-center">
             <div class="site-block-27">
               <ul>
-                <li><a href="#">&lt;</a></li>
-                <li class="active"><span>1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">&gt;</a></li>
+                <!-- <li><a href="#">&lt;</a></li> -->
+                <li id="pg-1" class="active"><a href="#" >1</a></li>
+                <li id="pg-2"><a href="#" >2</a></li>
+                <li id="pg-3"><a href="#">3</a></li>
+                <!-- <li><a href="#">4</a></li> -->
+                <!-- <li><a href="#">5</a></li> -->
+                <!-- <li><a href="#">&gt;</a></li> -->
               </ul>
             </div>
           </div>
@@ -228,11 +437,11 @@
       </div>
     </div>
 
-    <div class="site-section">
+    <!-- <div class="site-section">
       <div class="container" data-aos="fade-up">
         <div class="row mb-5">
           <div class="col-md-12 text-center">
-            <h2 class="font-weight-bold text-black">Behind The Mic</h2>
+            <h2 class="font-weight-bold text-black">Hydra</h2>
           </div>
         </div>
         <div class="row">
@@ -245,12 +454,10 @@
 
                 <h2 class="mb-2 font-weight-light h4">Megan Smith</h2>
                 <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit nemo.</p>
-                <p>
-                  <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
+                <p class="mb-4">
+                 
                 </p>
+               
               </div>
 
             </div>
@@ -359,9 +566,9 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="site-section bg-light block-13">
+    <!-- <div class="site-section bg-light block-13">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-12 text-center">
@@ -432,10 +639,11 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
 
 
-    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url(images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover overlay inner-page-cover" data-aos="fade" data-stellar-background-ratio="0.5">
+      <img id="kali-logo" src="./images/kali-logo.png" alt="">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
 
@@ -618,6 +826,46 @@
                 });
                 }
             });
+    </script>
+
+    <script>
+
+      $("#pg-1").click(
+        function(){
+      
+          $(".current-page").fadeOut();
+          $(".page-1").fadeIn();  
+          document.querySelector(".page-1").classList.add("current-page");
+          document.querySelector(".active").classList.remove("active");
+          document.querySelector("#pg-1").classList.add("active");    
+
+        }
+      )
+
+      $("#pg-2").click(
+        function(){
+      
+          $(".current-page").fadeOut();
+          $(".page-2").fadeIn();  
+          document.querySelector(".page-2").classList.add("current-page");
+          document.querySelector(".active").classList.remove("active");
+          document.querySelector("#pg-2").classList.add("active");    
+
+        }
+      )
+
+      $("#pg-3").click(
+        function(){
+      
+          $(".current-page").fadeOut();
+          $(".page-3").fadeIn();  
+          document.querySelector(".page-3").classList.add("current-page");
+          document.querySelector(".active").classList.remove("active");
+          document.querySelector("#pg-3").classList.add("active");    
+
+        }
+      )
+      
     </script>
 
 
