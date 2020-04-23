@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Uploader</title>
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+     <!-- Bootstrap JS -->
+ 
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <!-- <div id="bg-img" class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div> -->
+    <div class="container main-container page-1 py-5">
+
+        <!-- For demo purpose -->
+        
+
+        <br>
+    
+    
+        <div class="row py-4">
+
+            <div class="col-lg-5">
+                <header class="text-white text-center">
+                    <h1 class="display-4">Post Editor</h1>
+                    <p class="lead mb-0">Customize Your Own Post</p>
+                    <!-- <p class="mb-5 font-weight-light">Snippet by
+                        <a href="https://bootstrapious.com" class="text-white">
+                            <u>Bootstrapious</u>
+                        </a>
+                    </p> -->
+                    <br>
+                    <img src="https://res.cloudinary.com/mhmd/image/upload/v1564991372/image_pxlho1.svg" alt="" width="150" class="mb-4">
+                </header>
+        
+        
+        
+                <br>
+                <div class="row mx-auto">
+                    <div class="form-group mx-auto">
+                        
+                        <input type="text" value="Enter Title" class="form-control" id="usr">
+                      </div>
+                </div>
+            </div>
+            <div class="col-lg-5 mx-auto">
+    
+                <!-- Upload image input-->
+                <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                    <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
+                    <label id="upload-label" for="upload" class="font-weight-light text-muted">Choose file</label>
+                    <div class="input-group-append">
+                        <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
+                    </div>
+                </div>
+    
+                <!-- Uploaded image area-->
+                <p class="font-italic text-white text-center">Upload a cover image for your post.</p>
+                <div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+    
+            </div>
+
+           
+        </div>
+    </div>
+
+    
+    
+
+    <div class="container post-content page-2">
+        <div class="form-group">
+
+            <h1 class="text-center text-white">Add Content</h1>
+            <br>
+            <textarea class="form-control" rows="15" id="comment"></textarea>
+        </div>  
+
+    </div>
+
+
+    <div class="row">
+    
+        <button class="btn btn-lg btn-success previous page-2">
+            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+        </button>
+        <button class="btn btn-lg btn-success next page-1">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        </button>
+        <button class="btn btn-lg btn-success submit page-2">
+           Submit
+        </button>
+
+    </div>
+
+
+    <h1 class="thank text-center text-white page-3">
+        Thanks for contributing to NerdSploit!! <br>
+        Your Post is in review and will be posted shortly.
+
+    </h1>
+
+    
+    <!-- jQuery -->
+    <script>
+        $(".next").click(
+            function(){
+                $(".page-1").fadeOut(1);
+                $(".page-2").fadeIn(1000);               
+            }
+        )
+
+        $(".previous").click(
+            function(){
+                $(".page-2").fadeOut(1);
+                $(".page-1").fadeIn(1000);         
+            }
+        )
+
+
+        $(".submit").click(
+            function(){
+                $(".page-2").fadeOut(1);
+                $(".page-3").fadeIn(1000);
+            }
+        )
+    </script>
+
+    <script src="app.js"></script>
+</body>
+</html>

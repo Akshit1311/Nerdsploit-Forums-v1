@@ -1,0 +1,61 @@
+.editable
+{
+     display: inline-block;
+     word-wrap: break-word;
+     min-width: 100%;
+     padding: 30px;
+     background-color: #f3f3f3;
+     border-radius: 3px;
+     outline: 0;
+     
+}
+
+.helper-1 {
+     width: 40%;
+     position: fixed;
+     height: 100px;
+     top: 40%;
+     left:0;
+     bottom: 50%;
+     right: 0;
+     margin: auto;
+     z-index: 100;
+     display: block;
+}
+
+
+.helper-title {
+     position: absolute;
+     width: 12%;
+     z-index: 100;
+     top: 940px;
+     
+}
+
+.helper-para {
+     position: absolute;
+     width: 12%;
+     top: 1050px;
+     z-index: 100;
+     
+}
+
+.helper-submit {
+     position: absolute;
+     width: 12%;
+     top: 1200px;
+     z-index: 100;
+}
+
+
+
+.helper-overlay {
+     background: rgba(0, 0, 0, 0.644);
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 99;
+
+}
