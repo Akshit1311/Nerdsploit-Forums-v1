@@ -1,0 +1,13 @@
+.post-content {
+    color: black;
+    font-weight: 300;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+}
+
+.post-heading {
+    margin: 3rem auto;
+    text-align: center;
+    color: black;
+}
