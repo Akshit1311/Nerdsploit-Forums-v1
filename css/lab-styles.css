@@ -10,6 +10,8 @@
     
 }
 
+
+
 .lab-intro {
 
     margin: auto 10rem;
@@ -43,6 +45,10 @@
         width: 100%;
 
         margin-bottom: 2rem;
+    }
+
+    .img {
+        width: 100%;
     }
 }
 
