@@ -24,6 +24,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			window.scrollTo(0, 1);
 		}
 	</script>
+
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+	<link rel="stylesheet" href="./css/preloader.css">
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" href="css/jquery.desoslide.css">
 	<link href="css/style.css" rel='stylesheet' type='text/css' />
@@ -32,7 +39,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	    rel="stylesheet">
 </head>
 
-<body>
+<body onload="preLoader()">
+
+	<div id="loading"><img class="preloader-img" src="./logos/logo forum trans.png" alt=""></div>
+
 	<!--Header-->
 
 	<header>
@@ -989,6 +999,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- //footer -->
 		</div>
 	</footer>
+
+
+	<script src="js/loading.js"></script>
+
+
 	<!---->
 	<!-- js -->
 	<script src="js/jquery-2.2.3.min.js"></script>
@@ -1101,6 +1116,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	<!-- //Custom-JavaScript-File-Links -->
 	<script src="js/bootstrap.js"></script>
+
+	
 
 
 </body>
