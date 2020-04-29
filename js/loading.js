@@ -13,5 +13,5 @@
 
 
       $(document).ready(function(){
-        $("#loading").slideUp();
+        $("#loading").delay(6000).slideUp();
       });
